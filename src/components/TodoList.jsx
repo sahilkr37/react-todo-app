@@ -5,13 +5,13 @@ export default function TodoList(props) {
 
     return (
         <>
-            <div>Todo List</div>
-            <div>
+
+            <div className="space-y-4">
                 {
                     props.todos.map((element, index) => (
-                        <li key={index}>
+                        <div key={index}>
                             <TodoCard todos={props.todos} setTodos={props.setTodos} setInputValue={props.setInputValue} index={index} text={element} />
-                        </li>
+                        </div>
                     ))
                 }
 
